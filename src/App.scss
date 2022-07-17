@@ -1,0 +1,94 @@
+// UBUNTU Font
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+// COLORS
+$black: #000000;
+$blue: #14213d;
+$yellow: #fca311;
+$grey: #e5e5e5;
+$white: #ffffff;
+$lightBlue: #5AD2F4;
+
+$defaultPadding: 8em;
+$defaultMargin: 8em;
+
+body {
+  margin: 0;
+  font-family: 'Ubuntu';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media screen and (max-width: 768px) {
+    
+    * {
+      text-align: center;
+    }
+  }
+
+  .paddingY {
+    padding-top: $defaultPadding;
+    padding-bottom: $defaultPadding;
+
+    @media screen and (max-width: 767px) {
+      padding-top: $defaultPadding - 5em;
+      padding-bottom: $defaultPadding - 5em;
+    }
+  }
+
+  .marginY {
+    margin-top: $defaultMargin;
+    margin-bottom: $defaultMargin;
+
+    @media screen and (max-width: 767px) {
+      margin-top: $defaultMargin - 5em;
+      margin-bottom: $defaultMargin - 5em;
+    }
+  }
+
+  .hiddenXS {
+    @media screen and (max-width: 767px) {
+      visibility: hidden;
+    }
+  }
+
+  .marginTop {
+    margin-top: $defaultMargin - 5em;
+  }
+
+  .imgFluid {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .centralizaXY {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bgBlack {
+    background-color: $black;
+    color: $white;
+  }
+
+  .bgGrey {
+    background-color: $grey;
+    color: $black;
+  }
+
+  .yellow {
+    color: $yellow;
+  }
+
+  .blue {
+    color: $blue;
+  }
+
+  .lightBlue {
+    color: $lightBlue;
+  }
+
+  .textCenter {
+    text-align: center;
+  }
+}

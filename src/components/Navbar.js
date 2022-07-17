@@ -1,5 +1,4 @@
 import React from 'react';
-import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -27,9 +26,9 @@ function NavbarComponent() {
                         style={{ maxHeight: '100px' }}
                         navbarScroll
                     >
-                        <Nav.Link href="#action1">Home</Nav.Link>
-                        <Nav.Link href="#action2">Sobre</Nav.Link>
-                        <Nav.Link href="#action3">Serviços</Nav.Link>
+                        <Nav.Link href="#home">Home</Nav.Link>
+                        <Nav.Link href="#sobre">Sobre</Nav.Link>
+                        <Nav.Link href="#servicos">Serviços</Nav.Link>
 
                     </Nav>
                     {/* <Button variant="primary">Login</Button> */}

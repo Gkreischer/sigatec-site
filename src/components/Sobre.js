@@ -1,17 +1,15 @@
 import { Col, Container, Row } from "react-bootstrap";
 import pc01 from './../assets/images/pc01.svg';
 
-import Stack from 'react-bootstrap/Stack';
-
 function SobreComponent() {
     return (
-        <div>
+        <div id="#sobre">
             <Container>
-                <Row>
-                    <Col md={6} style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-                        <h5>
-                            A Sigatec Informática, empresa atuante no mercado há mais de 24 anos, conta com os melhores profissionais e produtos para atender às suas necessidades e garantir sua satisfação com o melhor preço. Possuimos os melhores produtos de marcas como: HP, Epson, Cannon, Corsair, EVGA, Intel, AMD, Thermaltake, Cooler Master e muitas outras.
-                        </h5>
+                <Row className="marginY">
+                    <Col md={6} className="centralizaXY">
+                        <h4>
+                            A <b>Sigatec Informática</b>, empresa atuante no mercado há mais de 25 anos, conta com os melhores profissionais e produtos para atender suas necessidades e garantir sua satisfação com o melhor preço.
+                        </h4>
                     </Col>
                     <Col md={6}>
                         <img src={pc01} alt="Imagem de pc genérico" />
