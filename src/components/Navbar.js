@@ -13,8 +13,8 @@ function NavbarComponent() {
                 <Navbar.Brand href="www.sigatecinformatica.com.br">
                     <img
                         src={logomarca}
-                        width="30"
-                        height="30"
+                        width="50"
+                        height="50"
                         className="d-inline-block align-top"
                         alt="React Bootstrap logo"
                     />

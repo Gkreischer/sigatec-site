@@ -1,4 +1,5 @@
-import { Card, Col, Container, Row } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
+import Carousel from 'react-bootstrap/Carousel';
 
 import hardware_gamer_low from './../assets/images/hardware_fan_low.jpg';
 import gamer_low from './../assets/images/gamer_low.jpg';
@@ -13,7 +14,36 @@ import intel_core from './../assets/images/logos/intel_core.png';
 import nvidia from './../assets/images/logos/nvidia.png';
 import thermaltake from './../assets/images/logos/thermaltake.png';
 import vgaNvidia from './../assets/images/vga_low.jpg';
+import headsetRazr from './../assets/images/razr_low.jpg';
+import corsairHardware from './../assets/images/corsair_low.jpg';
 
+function ProductsCarousel() {
+    return (
+        <Carousel variant="light">
+            <Carousel.Item>
+                <img
+                    className="d-block w-100"
+                    src={vgaNvidia}
+                    alt="First slide"
+                />
+            </Carousel.Item>
+            <Carousel.Item>
+                <img
+                    className="d-block w-100"
+                    src={headsetRazr}
+                    alt="Second slide"
+                />
+            </Carousel.Item>
+            <Carousel.Item>
+                <img
+                    className="d-block w-100"
+                    src={corsairHardware}
+                    alt="Third slide"
+                />
+            </Carousel.Item>
+        </Carousel>
+    );
+}
 
 function GamerComponent() {
     return (
@@ -24,25 +54,25 @@ function GamerComponent() {
                         <h1 className="yellow">Gamers, essa é sua área!</h1>
                     </Col>
                 </Row>
-                <Row className="marginY">
+                <Row>
                     <Col md={6}>
-                        <Card bg="dark" text="white">
-                            <Card.Body>
-                                <Card.Text>
-                                    <h4>
-                                        Aqui você tem a manutenção mais <span className="yellow">completa</span> e <span className="yellow">especializada</span> no seu setup, para garantir melhor estabilidade e desempenho.
-                                    </h4>
-                                </Card.Text>
-                                <Card.Text>
-                                    <p className="marginY">Nossos testes incluem
-                                        <span className="lightBlue"> diagnóstico completo do equipamento, várias horas de estresse, testes de tensão, refrigeração, instruções de memória,
-                                            placa de vídeo...
-                                        </span>
-                                        tudo isso para garantir desempenho máximo!
-                                    </p>
-                                </Card.Text>
-                            </Card.Body>
-                        </Card>
+                        <Row>
+                            <Col>
+                                <h4>
+                                    Aqui você tem a manutenção mais <span className="yellow">completa</span> e <span className="yellow">especializada</span> no seu setup, para garantir melhor estabilidade e desempenho.
+                                </h4>
+                            </Col>
+                        </Row>
+                        <Row>
+                            <Col>
+                                <p className="marginY">Nossos testes incluem
+                                    <span className="lightBlue"> diagnóstico completo do equipamento, várias horas de estresse, testes de tensão, refrigeração, instruções de memória,
+                                        placa de vídeo...
+                                    </span>
+                                    tudo isso para garantir desempenho máximo!
+                                </p>
+                            </Col>
+                        </Row>
                     </Col>
                     <Col>
                         <img src={hardware_gamer_low} alt="Gamer jogando em seu pc" className="imgFluid" />
@@ -87,6 +117,16 @@ function GamerComponent() {
                     </Col>
                     <Col>
                         <img src={thermaltake} alt="Logomarca da Thermaltake" className="imgFluid" />
+                    </Col>
+                </Row>
+                <Row className="text-center my-5">
+                    <Col>
+                        <h1 className="yellow">Alguns de nossos produtos</h1>
+                    </Col>
+                </Row>
+                <Row className="centralizaXY mb-5">
+                    <Col md={10} size-sm>
+                        <ProductsCarousel></ProductsCarousel>
                     </Col>
                 </Row>
             </Container>
