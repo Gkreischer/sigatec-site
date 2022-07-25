@@ -8,7 +8,7 @@ import logomarca from './../assets/images/Logo.jpg';
 function NavbarComponent() {
 
     return (
-        <Navbar bg="dark" variant="dark" expand="lg">
+        <Navbar bg="dark" variant="dark" expand="md" sticky="top">
             <Container fluid>
                 <Navbar.Brand href="www.sigatecinformatica.com.br">
                     <img
@@ -28,10 +28,10 @@ function NavbarComponent() {
                     >
                         <Nav.Link href="#home">Home</Nav.Link>
                         <Nav.Link href="#sobre">Sobre</Nav.Link>
+                        <Nav.Link href="#gamers">Gamers</Nav.Link>
                         <Nav.Link href="#servicos">Serviços</Nav.Link>
-
+                        <Nav.Link href="#contato">Contato</Nav.Link>
                     </Nav>
-                    {/* <Button variant="primary">Login</Button> */}
                 </Navbar.Collapse>
             </Container>
         </Navbar>

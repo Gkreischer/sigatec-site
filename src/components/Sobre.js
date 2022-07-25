@@ -3,9 +3,9 @@ import pc01 from './../assets/images/pc01.svg';
 
 function SobreComponent() {
     return (
-        <div>
+        <div className="py-5">
             <Container>
-                <Row className="my-5">
+                <Row>
                     <Col md={6} className="centralizaXY">
                         <h4>
                             A <b>Sigatec Informática</b>, empresa atuante no mercado há mais de 25 anos, conta com os melhores profissionais e produtos para atender suas necessidades e garantir sua satisfação com o melhor preço.

@@ -49,12 +49,12 @@ function GamerComponent() {
     return (
         <div className="centralizaXY bgBlack">
             <Container>
-                <Row className="marginY">
+                <Row className="py-5">
                     <Col>
                         <h1 className="yellow">Gamers, essa é sua área!</h1>
                     </Col>
                 </Row>
-                <Row>
+                <Row className="py-5">
                     <Col md={6}>
                         <Row>
                             <Col>
@@ -63,9 +63,9 @@ function GamerComponent() {
                                 </h4>
                             </Col>
                         </Row>
-                        <Row>
+                        <Row className="py-5">
                             <Col>
-                                <p className="marginY">Nossos testes incluem
+                                <p>Nossos testes incluem
                                     <span className="lightBlue"> diagnóstico completo do equipamento, várias horas de estresse, testes de tensão, refrigeração, instruções de memória,
                                         placa de vídeo...
                                     </span>
@@ -75,12 +75,12 @@ function GamerComponent() {
                         </Row>
                     </Col>
                     <Col>
-                        <img src={hardware_gamer_low} alt="Gamer jogando em seu pc" className="imgFluid" />
+                        <img src={hardware_gamer_low} alt="Gamer jogando em seu pc" className="img-fluid" />
                     </Col>
                 </Row>
-                <Row className="marginY">
+                <Row className="py-5">
                     <Col md={6}>
-                        <img src={gamer_low} alt="Gamer jogando em seu pc" className="imgFluid" />
+                        <img src={gamer_low} alt="Gamer jogando em seu pc" className="img-fluid" />
                     </Col>
                     <Col md={6} className="centralizaXY marginY">
                         <h4>
@@ -88,44 +88,44 @@ function GamerComponent() {
                         </h4>
                     </Col>
                 </Row>
-                <Row className="marginY">
+                <Row className="py-5">
                     <Col className="textCenter">
                         <h4>Diversas marcas como RedDragon, OEX, Corsair, Logitech, AMD Ryzen, Intel Core, Nvidia, Thermaltake e muitos outros...</h4>
                     </Col>
                 </Row>
-                <Row className="centralizaXY marginY">
+                <Row className="centralizaXY">
                     <Col>
-                        <img src={redragon} alt="Logomarca da Redragon" className="imgFluid" />
+                        <img src={redragon} alt="Logomarca da Redragon" className="img-fluid" />
                     </Col>
                     <Col>
-                        <img src={oex} alt="Logomarca da OEX" className="imgFluid" />
+                        <img src={oex} alt="Logomarca da OEX" className="img-fluid" />
                     </Col>
                     <Col>
-                        <img src={corsair} alt="Logomarca da Corsair" className="imgFluid" />
+                        <img src={corsair} alt="Logomarca da Corsair" className="img-fluid" />
                     </Col>
                     <Col>
-                        <img src={logitech} alt="Logomarca da Logitech" className="imgFluid" />
+                        <img src={logitech} alt="Logomarca da Logitech" className="img-fluid" />
                     </Col>
                     <Col>
-                        <img src={ryzen} alt="Logomarca da Ryzen" className="imgFluid" />
+                        <img src={ryzen} alt="Logomarca da Ryzen" className="img-fluid" />
                     </Col>
                     <Col>
-                        <img src={intel_core} alt="Logomarca da Intel Core" className="imgFluid" />
+                        <img src={intel_core} alt="Logomarca da Intel Core" className="img-fluid" />
                     </Col>
                     <Col>
-                        <img src={nvidia} alt="Logomarca da Nvidia" className="imgFluid" />
+                        <img src={nvidia} alt="Logomarca da Nvidia" className="img-fluid" />
                     </Col>
                     <Col>
-                        <img src={thermaltake} alt="Logomarca da Thermaltake" className="imgFluid" />
+                        <img src={thermaltake} alt="Logomarca da Thermaltake" className="img-fluid" />
                     </Col>
                 </Row>
-                <Row className="text-center my-5">
+                <Row className="text-center py-5">
                     <Col>
                         <h1 className="yellow">Alguns de nossos produtos</h1>
                     </Col>
                 </Row>
-                <Row className="centralizaXY mb-5">
-                    <Col md={10} size-sm>
+                <Row className="centralizaXY pb-5">
+                    <Col md={10}>
                         <ProductsCarousel></ProductsCarousel>
                     </Col>
                 </Row>

@@ -18,13 +18,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  @media screen and (max-width: 768px) {
-    
-    * {
-      text-align: center;
-    }
-  }
-
   .paddingY {
     padding-top: $defaultPadding;
     padding-bottom: $defaultPadding;

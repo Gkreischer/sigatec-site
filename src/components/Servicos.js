@@ -45,28 +45,46 @@ function AccordionServices() {
                     <p>
                         <b>Utilizamos técnicas e softwares específicos para assegurar que o reparo foi efetuado corretamente.</b>
                     </p>
+                    <p>Alguns de nossos serviços:</p>
+                    <ul>
+                        <li>Limpeza interna completa com troca de pasta térmica</li>
+                        <li>Instalação de peças e sistemas operacionais (Windows e Linux)</li>
+                        <li>Formatação (com ou sem backup)</li>
+                        <li>Troca de teclado de notebooks (soldados e não-soldados)</li>
+                        <li>Troca de baterias (internas e não-interna)</li>
+                        <li>Troca de HD, SSD, memória, placa de vídeo, fonte, cpu e muito mais! </li>
+                        <li>Instalação e configuração de roteadores</li>
+                    </ul>
                 </Accordion.Body>
             </Accordion.Item>
-            <Accordion.Item eventKey="1">
+            <Accordion.Item eventKey="2">
                 <Accordion.Header>
                     <b>Vendas</b>
                 </Accordion.Header>
                 <Accordion.Body>
                     <p>Trabalhamos com venda de:</p>
                     <ul>
-                        <li>Peças de hardware</li>
+                        <li>
+                            <b>
+                                Peças de hardware
+                            </b>
+                        </li>
                         <ul>
-                            <li>Processador</li>
-                            <li>Memória</li>
-                            <li>Fonte</li>
-                            <li>Placa-mãe</li>
-                            <li>SSD</li>
-                            <li>Placa de vídeo</li>
-                            <li>HD</li>
-                            <li>Gabinete</li>
+                            <li>Processadores</li>
+                            <li>Memórias</li>
+                            <li>Fontes de Alimentação</li>
+                            <li>Placas-mãe</li>
+                            <li>SSDs</li>
+                            <li>Placa de vídeos</li>
+                            <li>HDs</li>
+                            <li>Gabinetes</li>
                             <li>Ventoinhas</li>
                         </ul>
-                        <li>Periféricos</li>
+                        <li>
+                            <b>
+                                Periféricos
+                            </b>
+                        </li>
                         <ul>
                             <li>Teclados</li>
                             <li>Headsets</li>
@@ -79,13 +97,28 @@ function AccordionServices() {
                             <li>Cartuchos</li>
                             <li>Tintas</li>
                         </ul>
-                        <li>Impressoras:</li>
+                        <li>
+                            <b>
+                                Redes
+                            </b>
+                        </li>
+                        <ul>
+                            <li>Roteadores</li>
+                            <li>Cabos e conectores</li>
+                            <li>Ferramentas</li>
+                        </ul>
+                        <li>
+                            <b>
+                                Impressoras
+                            </b>
+                        </li>
                         <ul>
                             <li>Impressoras</li>
                             <li>Cartuchos</li>
                             <li>Tintas</li>
                         </ul>
                     </ul>
+                    <p>Trabalhamos com diversas marcas: <b>AMD, Intel, Asus, Gigabyte, Logitech, Redragon, OEX, Sandisk, Kingston, HP, EPSON, Cannon, MSI, Nvidia, Corsair, Thermaltake, Lan Expert, TP-Link, Mercusys, Seagate e muito mais...</b></p>
                 </Accordion.Body>
             </Accordion.Item>
         </Accordion>
@@ -95,7 +128,7 @@ function AccordionServices() {
 function ServicosComponent() {
     return (
         <div>
-            <Container>
+            <Container className="my-5">
                 <Row className="my-5">
                     <Col>
                         <h1>
