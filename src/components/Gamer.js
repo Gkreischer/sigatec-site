@@ -1,3 +1,5 @@
+import { useContext } from "react";
+
 import { Col, Container, Row } from "react-bootstrap";
 import Carousel from 'react-bootstrap/Carousel';
 
@@ -16,6 +18,8 @@ import thermaltake from './../assets/images/logos/thermaltake.png';
 import vgaNvidia from './../assets/images/vga_low.jpg';
 import headsetRazr from './../assets/images/razr_low.jpg';
 import corsairHardware from './../assets/images/corsair_low.jpg';
+import { AnimationsContext } from "./Animations";
+
 
 function ProductsCarousel() {
     return (
@@ -46,25 +50,24 @@ function ProductsCarousel() {
 }
 
 function GamerComponent() {
+    
+    const { effect } = useContext(AnimationsContext)
+    
     return (
-        <div className="centralizaXY bgBlack">
+        <div className="bgBlack text-center">
             <Container>
-                <Row className="py-5">
+                <Row className={['py-5 text-md-start', effect.gamerComponent.gamerRow01.visibility, effect.gamerComponent.gamerRow01.animation]}>
                     <Col>
                         <h1 className="yellow">Gamers, essa é sua área!</h1>
                     </Col>
                 </Row>
-                <Row className="py-5">
+                <Row className={['pb-5 text-md-start', effect.gamerComponent.gamerRow01.visibility, effect.gamerComponent.gamerRow01.animation]}>
                     <Col md={6}>
                         <Row>
                             <Col>
                                 <h4>
                                     Aqui você tem a manutenção mais <span className="yellow">completa</span> e <span className="yellow">especializada</span> no seu setup, para garantir melhor estabilidade e desempenho.
                                 </h4>
-                            </Col>
-                        </Row>
-                        <Row className="py-5">
-                            <Col>
                                 <p>Nossos testes incluem
                                     <span className="lightBlue"> diagnóstico completo do equipamento, várias horas de estresse, testes de tensão, refrigeração, instruções de memória,
                                         placa de vídeo...
@@ -75,25 +78,25 @@ function GamerComponent() {
                         </Row>
                     </Col>
                     <Col>
-                        <img src={hardware_gamer_low} alt="Gamer jogando em seu pc" className="img-fluid" />
+                        <img src={hardware_gamer_low} alt="Imagem de hardware de PC Gamer" className="img-fluid" />
                     </Col>
                 </Row>
-                <Row className="py-5">
+                <Row className={['text-md-start', effect.gamerComponent.gamerRow02.visibility, effect.gamerComponent.gamerRow02.animation]}>
                     <Col md={6}>
                         <img src={gamer_low} alt="Gamer jogando em seu pc" className="img-fluid" />
                     </Col>
-                    <Col md={6} className="centralizaXY marginY">
+                    <Col md={6} className="centralizaXY pt-5 pt-md-0">
                         <h4>
                             <span className="yellow">Diversos acessórios</span> como headsets, mouses, teclados, microfones, ventoinhas e muito mais.
                         </h4>
                     </Col>
                 </Row>
-                <Row className="py-5">
-                    <Col className="textCenter">
-                        <h4>Diversas marcas como RedDragon, OEX, Corsair, Logitech, AMD Ryzen, Intel Core, Nvidia, Thermaltake e muitos outros...</h4>
+                <Row className={['text-md-start pt-5', effect.gamerComponent.gamerRow03.visibility, effect.gamerComponent.gamerRow03.animation]}>
+                    <Col>
+                        <h4>Diversas marcas como RedDragon, OEX, Corsair, Logitech, AMD Ryzen, Intel Core, Nvidia, Thermaltake e muitas outras...</h4>
                     </Col>
                 </Row>
-                <Row className="centralizaXY">
+                <Row className={['centralizaXY',effect.gamerComponent.gamerRow03.visibility, effect.gamerComponent.gamerRow03.animation]}>
                     <Col>
                         <img src={redragon} alt="Logomarca da Redragon" className="img-fluid" />
                     </Col>
@@ -119,12 +122,12 @@ function GamerComponent() {
                         <img src={thermaltake} alt="Logomarca da Thermaltake" className="img-fluid" />
                     </Col>
                 </Row>
-                <Row className="text-center py-5">
+                <Row className={['text-center py-5', effect.gamerComponent.gamerRow03.visibility, effect.gamerComponent.gamerRow03.animation]}>
                     <Col>
                         <h1 className="yellow">Alguns de nossos produtos</h1>
                     </Col>
                 </Row>
-                <Row className="centralizaXY pb-5">
+                <Row className={['centralizaXY pb-5', effect.gamerComponent.gamerRow03.visibility, effect.gamerComponent.gamerRow03.animation]}>
                     <Col md={10}>
                         <ProductsCarousel></ProductsCarousel>
                     </Col>

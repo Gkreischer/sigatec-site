@@ -13,44 +13,31 @@ $defaultPadding: 8em;
 $defaultMargin: 8em;
 
 body {
+  
+  scroll-behavior: smooth;
   margin: 0;
   font-family: 'Ubuntu' !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  .paddingY {
-    padding-top: $defaultPadding;
-    padding-bottom: $defaultPadding;
-
-    @media screen and (max-width: 767px) {
-      padding-top: $defaultPadding - 5em;
-      padding-bottom: $defaultPadding - 5em;
-    }
+  a {
+    text-decoration: none;
   }
 
-  .marginY {
-    margin-top: $defaultMargin;
-    margin-bottom: $defaultMargin;
+  .container {
+    padding: 8rem 0;
 
-    @media screen and (max-width: 767px) {
-      margin-top: $defaultMargin - 5em;
-      margin-bottom: $defaultMargin - 5em;
+    @media screen and (max-width: 767px){
+      padding: 4rem 1rem;
     }
   }
-
-  .hiddenXS {
-    @media screen and (max-width: 767px) {
-      visibility: hidden;
-    }
+  
+  .acorddion-button {
+    background-color: $lightBlue !important;
   }
 
   .marginTop {
     margin-top: $defaultMargin - 5em;
-  }
-
-  .imgFluid {
-    max-width: 100%;
-    height: auto;
   }
 
   .centralizaXY {
@@ -81,7 +68,20 @@ body {
     color: $lightBlue;
   }
 
-  .textCenter {
-    text-align: center;
+}
+
+// ANIMATIONS
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
   }
+
+  80% {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation: fadeIn 3s ease 0s normal none;
 }

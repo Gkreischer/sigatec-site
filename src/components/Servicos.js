@@ -52,8 +52,9 @@ function AccordionServices() {
                         <li>Formatação (com ou sem backup)</li>
                         <li>Troca de teclado de notebooks (soldados e não-soldados)</li>
                         <li>Troca de baterias (internas e não-interna)</li>
-                        <li>Troca de HD, SSD, memória, placa de vídeo, fonte, cpu e muito mais! </li>
+                        <li>Troca de HD, SSD, memória, placa de vídeo, fonte, cpu e etc. </li>
                         <li>Instalação e configuração de roteadores</li>
+                        <li><b>E muito mais!</b></li>
                     </ul>
                 </Accordion.Body>
             </Accordion.Item>
@@ -79,6 +80,7 @@ function AccordionServices() {
                             <li>HDs</li>
                             <li>Gabinetes</li>
                             <li>Ventoinhas</li>
+                            <li>Coolers</li>
                         </ul>
                         <li>
                             <b>
@@ -91,11 +93,7 @@ function AccordionServices() {
                             <li>Caixas de som</li>
                             <li>Webcam</li>
                             <li>Microfones</li>
-                        </ul>
-                        <ul>
-                            <li>Impressoras</li>
-                            <li>Cartuchos</li>
-                            <li>Tintas</li>
+                            <li>Fones de ouvido</li>
                         </ul>
                         <li>
                             <b>
@@ -118,7 +116,7 @@ function AccordionServices() {
                             <li>Tintas</li>
                         </ul>
                     </ul>
-                    <p>Trabalhamos com diversas marcas: <b>AMD, Intel, Asus, Gigabyte, Logitech, Redragon, OEX, Sandisk, Kingston, HP, EPSON, Cannon, MSI, Nvidia, Corsair, Thermaltake, Lan Expert, TP-Link, Mercusys, Seagate e muito mais...</b></p>
+                    <p className="text-center">Trabalhamos com diversas marcas: <b>AMD, Intel, Asus, Gigabyte, Logitech, Redragon, OEX, Sandisk, Kingston, HP, EPSON, Cannon, MSI, Nvidia, Corsair, Thermaltake, Lan Expert, TP-Link, Mercusys, Seagate e muito mais...</b></p>
                 </Accordion.Body>
             </Accordion.Item>
         </Accordion>
@@ -128,8 +126,8 @@ function AccordionServices() {
 function ServicosComponent() {
     return (
         <div>
-            <Container className="my-5">
-                <Row className="my-5">
+            <Container>
+                <Row className="pb-5">
                     <Col>
                         <h1>
                             Nossos serviços
