@@ -56,7 +56,7 @@ function GamerComponent() {
     return (
         <div className="bgBlack text-center">
             <Container>
-                <Row className={['py-5 text-md-start', effect.gamerComponent.gamerRow01.visibility, effect.gamerComponent.gamerRow01.animation]}>
+                <Row className={['pb-5 text-md-start', effect.gamerComponent.gamerRow01.visibility, effect.gamerComponent.gamerRow01.animation]}>
                     <Col>
                         <h1 className="yellow">Gamers, essa é sua área!</h1>
                     </Col>

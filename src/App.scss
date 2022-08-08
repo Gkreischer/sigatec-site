@@ -68,6 +68,12 @@ body {
     color: $lightBlue;
   }
 
+  .shadow {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color=#000000)";/*IE 8*/
+    text-shadow: 3px 3px 4px #000000;/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color=#000000); /*IE 5.5-7*/
+  }
+
 }
 
 // ANIMATIONS

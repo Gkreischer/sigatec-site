@@ -14,7 +14,7 @@ function NavbarComponent() {
                     src={logomarca}
                     width="50"
                     height="50"
-                    className="d-inline-block align-top"
+                    className="d-inline-block align-top ms-3"
                     alt="React Bootstrap logo"
                 />
             </Navbar.Brand>
