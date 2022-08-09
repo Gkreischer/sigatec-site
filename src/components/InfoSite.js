@@ -5,6 +5,11 @@ function InfoSiteComponent() {
         <Container fluid className="text-center bg-dark text-light py-5">
             <Row>
                 <Col>
+                    <p className="text-muted">Desenvolvido por:</p>
+                </Col>
+            </Row>
+            <Row>
+                <Col>
                     <i className="bi bi-person-circle"></i>
                 </Col>
             </Row>

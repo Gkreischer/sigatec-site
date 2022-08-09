@@ -11,7 +11,7 @@ function SobreComponent() {
         <Container className={[effect.aboutComponent.visibility, effect.aboutComponent.animation]}>
             <Row className="text-center">
                 <Col>
-                    <img src={logo} alt="Logo da Sigatec Informatica" />
+                    <img src={logo} alt="Logo da Sigatec Informatica" className="img-fluid" />
                 </Col>
             </Row>
             <Row className='text-center pt-md-5 pt-3'>

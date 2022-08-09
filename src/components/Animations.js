@@ -6,6 +6,8 @@ const { Provider } = AnimationsContext
 
 export const AnimationsProvider = ({ children }) => {
 
+  const [location, setLocation] = useState('home');
+
   const [effect, setEffect] = useState({
     aboutComponent: {
       animation: '',
@@ -39,16 +41,20 @@ export const AnimationsProvider = ({ children }) => {
     console.log(scrollHeight);
 
     if(screenWidth < 768) {
-      mobileAnimationsStart = 500;
+      mobileAnimationsStart = 700;
     }
 
-    if (scrollHeight > 450 - mobileAnimationsStart) {
+    if (scrollHeight > 400 - mobileAnimationsStart) {
+      setLocation('sobre');
+      
       setEffect(prevState => ({
         ...prevState, aboutComponent: { animation: 'fadeIn', visibility: 'visible' }
       }));
     }
 
     if (document.documentElement.scrollTop > 1050 - mobileAnimationsStart) {
+      setLocation('gamers');
+      
       setEffect(prevState => ({
         ...prevState, gamerComponent: {
           gamerRow01: { animation: 'fadeIn', visibility: 'visible' },
@@ -59,6 +65,8 @@ export const AnimationsProvider = ({ children }) => {
     }
 
     if (document.documentElement.scrollTop > 1550 - mobileAnimationsStart) {
+      setLocation('gamer');
+      
       setEffect(prevState => ({
         ...prevState, gamerComponent: {
           gamerRow01: { animation: 'fadeIn', visibility: 'visible' },
@@ -68,7 +76,9 @@ export const AnimationsProvider = ({ children }) => {
       }));
     }
 
-    if (document.documentElement.scrollTop > 1900 - mobileAnimationsStart) {
+    if (document.documentElement.scrollTop > 2100 - mobileAnimationsStart) {
+      setLocation('gamer');
+      
       setEffect(prevState => ({
         ...prevState, gamerComponent: {
           gamerRow01: { animation: 'fadeIn', visibility: 'visible' },
@@ -76,6 +86,10 @@ export const AnimationsProvider = ({ children }) => {
           gamerRow03: { animation: 'fadeIn', visibility: 'visible' }
         }
       }));
+    }
+
+    if (document.documentElement.scrollTop > 3200 - mobileAnimationsStart) {
+      setLocation('servicos');
     }
   }
 
