@@ -6,7 +6,7 @@ import image03 from './../assets/images/03.jpg';
 
 function CarouselComponent() {
     return (
-        <Carousel fade>
+        <Carousel fade id="home">
             <Carousel.Item>
                 <img
                     className="d-block w-100"

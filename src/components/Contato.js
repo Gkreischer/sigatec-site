@@ -3,7 +3,7 @@ import { Col, Container, Row } from "react-bootstrap";
 function ContatoComponent() {
     return (
         <div className="bg-warning">
-            <Container>
+            <Container id="contato">
                 <Row className="pb-5">
                     <Col>
                         <h1>Contato</h1>
@@ -17,7 +17,7 @@ function ContatoComponent() {
                                     <i className="bi bi-telephone-fill"></i>
                                 </h3>
                             </Col>
-                            <Col xs={10} sm={4}>
+                            <Col xs={10} sm={8}>
                                 <h3><a className="text-dark" href="tel:+552222195011">(22) 2219-5011</a></h3>
                             </Col>
                         </Row>
@@ -43,7 +43,26 @@ function ContatoComponent() {
                                 <p> Referência: Em frente as <b className="text-danger">Lojas Americanas</b>, ao lado do restaurante Aquarius.</p>
                             </Col>
                         </Row>
-
+                        <Row>
+                            <Col xs={2} md={1}>
+                                <h3>
+                                    <i className="bi bi-facebook"></i>
+                                </h3>
+                            </Col>
+                            <Col xs={10} sm={8}>
+                                <h3><a className="text-dark" href="https://www.facebook.com/sigatecinformatica">sigatecinformatica</a></h3>
+                            </Col>
+                        </Row>
+                        <Row>
+                            <Col xs={2} md={1}>
+                                <h3>
+                                    <i className="bi bi-instagram"></i>
+                                </h3>
+                            </Col>
+                            <Col xs={10} sm={8}>
+                                <h3><a className="text-dark" href="https://www.instagram.com/sigatecinformatica/">@sigatecinformatica</a></h3>
+                            </Col>
+                        </Row>
                     </Col>
                     <Col md={6} >
                         <div className="ratio ratio-16x9">

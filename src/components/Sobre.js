@@ -8,7 +8,7 @@ function SobreComponent() {
     const { effect } = useContext(AnimationsContext)
 
     return (
-        <Container className={[effect.aboutComponent.visibility, effect.aboutComponent.animation]}>
+        <Container id="sobre" className={[effect.aboutComponent.visibility, effect.aboutComponent.animation]}>
             <Row className="text-center">
                 <Col>
                     <img src={logo} alt="Logo da Sigatec Informatica" className="img-fluid" />

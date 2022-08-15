@@ -13,6 +13,10 @@ $defaultPadding: 8em;
 $defaultMargin: 8em;
 
 body {
+
+  img {
+    border-radius: 5px;
+  }
   
   scroll-behavior: smooth;
   margin: 0;

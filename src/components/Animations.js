@@ -6,7 +6,9 @@ const { Provider } = AnimationsContext
 
 export const AnimationsProvider = ({ children }) => {
 
-  const [location, setLocation] = useState('home');
+  const [location, setLocation] = useState({
+    location: 'home'
+  });
 
   const [effect, setEffect] = useState({
     aboutComponent: {
@@ -29,32 +31,48 @@ export const AnimationsProvider = ({ children }) => {
     }
   });
 
+  const handleClick = (e) => {
+
+    window.location.hash = 'sobre';
+    
+  }
+
   var screenWidth = window.screen.availWidth;
   var scrollHeight = 0;
   var mobileAnimationsStart = 0;
 
   const handleScroll = () => {
-    
-    scrollHeight = document.documentElement.scrollTop;
-    
-    // VERIFY HOW PIXELS ANIMATIONS NEEDS TO START
-    console.log(scrollHeight);
 
-    if(screenWidth < 768) {
+    scrollHeight = document.documentElement.scrollTop;
+
+    // VERIFY HOW PIXELS ANIMATIONS NEEDS TO START
+    //console.log(scrollHeight);
+
+    if (screenWidth < 768) {
       mobileAnimationsStart = 700;
     }
 
+    setLocation({
+      location: 'home'
+    })
+
     if (scrollHeight > 400 - mobileAnimationsStart) {
-      setLocation('sobre');
-      
+
+      setLocation({
+        location: 'sobre'
+      })
+
       setEffect(prevState => ({
         ...prevState, aboutComponent: { animation: 'fadeIn', visibility: 'visible' }
       }));
     }
 
     if (document.documentElement.scrollTop > 1050 - mobileAnimationsStart) {
-      setLocation('gamers');
-      
+
+      setLocation({
+        location: 'gamer'
+      })
+
       setEffect(prevState => ({
         ...prevState, gamerComponent: {
           gamerRow01: { animation: 'fadeIn', visibility: 'visible' },
@@ -65,8 +83,11 @@ export const AnimationsProvider = ({ children }) => {
     }
 
     if (document.documentElement.scrollTop > 1550 - mobileAnimationsStart) {
-      setLocation('gamer');
-      
+
+      setLocation({
+        location: 'gamer'
+      })
+
       setEffect(prevState => ({
         ...prevState, gamerComponent: {
           gamerRow01: { animation: 'fadeIn', visibility: 'visible' },
@@ -77,8 +98,11 @@ export const AnimationsProvider = ({ children }) => {
     }
 
     if (document.documentElement.scrollTop > 2100 - mobileAnimationsStart) {
-      setLocation('gamer');
-      
+
+      setLocation({
+        location: 'gamer'
+      })
+
       setEffect(prevState => ({
         ...prevState, gamerComponent: {
           gamerRow01: { animation: 'fadeIn', visibility: 'visible' },
@@ -88,8 +112,18 @@ export const AnimationsProvider = ({ children }) => {
       }));
     }
 
+    
+    if (document.documentElement.scrollTop > 2800 - mobileAnimationsStart) {
+
+      setLocation({
+        location: 'servicos'
+      })
+    }
+
     if (document.documentElement.scrollTop > 3200 - mobileAnimationsStart) {
-      setLocation('servicos');
+      setLocation({
+        location: 'contato'
+      })
     }
   }
 
@@ -98,7 +132,7 @@ export const AnimationsProvider = ({ children }) => {
   });
 
   return (
-    <Provider value={{ effect, handleScroll }}>
+    <Provider value={{ effect, location, handleScroll, handleClick }}>
       {children}
     </Provider>
   )
