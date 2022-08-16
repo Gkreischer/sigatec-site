@@ -31,22 +31,23 @@ export const AnimationsProvider = ({ children }) => {
     }
   });
 
+  // REMOVE .active WHEN CLICK LINKS NAVBAR
   const handleClick = (e) => {
-
-    window.location.hash = 'sobre';
-    
+    e.stopImmediatePropagation();
   }
 
   var screenWidth = window.screen.availWidth;
   var scrollHeight = 0;
   var mobileAnimationsStart = 0;
 
+  // VERIFY WHEN SCREEN SCROLL DOWN AND CONTROL EFFECT
+  // ADJUSTING EFFECTS ON SMARTPHONES (mobileAnimationsStart)
   const handleScroll = () => {
 
     scrollHeight = document.documentElement.scrollTop;
 
     // VERIFY HOW PIXELS ANIMATIONS NEEDS TO START
-    //console.log(scrollHeight);
+    console.log(scrollHeight);
 
     if (screenWidth < 768) {
       mobileAnimationsStart = 700;
@@ -112,15 +113,15 @@ export const AnimationsProvider = ({ children }) => {
       }));
     }
 
-    
-    if (document.documentElement.scrollTop > 2800 - mobileAnimationsStart) {
+
+    if (document.documentElement.scrollTop > 3900 - mobileAnimationsStart) {
 
       setLocation({
         location: 'servicos'
       })
     }
 
-    if (document.documentElement.scrollTop > 3200 - mobileAnimationsStart) {
+    if (document.documentElement.scrollTop > 4500 - mobileAnimationsStart) {
       setLocation({
         location: 'contato'
       })

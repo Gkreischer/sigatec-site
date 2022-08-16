@@ -65,7 +65,7 @@ function ContatoComponent() {
                         </Row>
                     </Col>
                     <Col md={6} >
-                        <div className="ratio ratio-16x9">
+                        <div className="ratio ratio-16x9 mt-5 mt-md-0">
                             <iframe className="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3685.388888177394!2d-41.94891198550803!3d-22.527100530095016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x97b3645f2e3cf1%3A0x96697c5b445ecf50!2sSigatec+Inform%C3%A1tica!5e0!3m2!1spt-BR!2sbr!4v1520641657006"
                                 allowFullScreen title="Localização da Sigatec Informática no Google Maps"></iframe>
                         </div>

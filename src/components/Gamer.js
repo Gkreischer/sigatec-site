@@ -18,6 +18,12 @@ import thermaltake from './../assets/images/logos/thermaltake.png';
 import vgaNvidia from './../assets/images/vga_low.jpg';
 import headsetRazr from './../assets/images/razr_low.jpg';
 import corsairHardware from './../assets/images/corsair_low.jpg';
+import asus from './../assets/images/logos/asus.png';
+import gigabyte from './../assets/images/logos/gigabyte.png';
+import msi from './../assets/images/logos/msi.png';
+import seagate from './../assets/images/logos/seagate.jpg';
+import hp from './../assets/images/logos/hp.png';
+import epson from './../assets/images/logos/epson.png';
 import { AnimationsContext } from "./Animations";
 
 
@@ -58,7 +64,7 @@ function GamerComponent() {
             <Container id="gamer">
                 <Row className={['pb-5 text-md-start', effect.gamerComponent.gamerRow01.visibility, effect.gamerComponent.gamerRow01.animation]}>
                     <Col>
-                        <h1 className="yellow">Gamers, essa é sua área!</h1>
+                        <h1 className="yellow animate-character">Gamers, essa é sua área!</h1>
                     </Col>
                 </Row>
                 <Row className={['pb-5 text-md-start', effect.gamerComponent.gamerRow01.visibility, effect.gamerComponent.gamerRow01.animation]}>
@@ -91,7 +97,7 @@ function GamerComponent() {
                         </h4>
                     </Col>
                 </Row>
-                <Row className={['text-md-start pt-5', effect.gamerComponent.gamerRow03.visibility, effect.gamerComponent.gamerRow03.animation]}>
+                <Row className={['text-md-start py-5', effect.gamerComponent.gamerRow03.visibility, effect.gamerComponent.gamerRow03.animation]}>
                     <Col>
                         <h4>Diversas marcas como RedDragon, OEX, Corsair, Logitech, AMD Ryzen, Intel Core, Nvidia, Thermaltake e muitas outras...</h4>
                     </Col>
@@ -120,6 +126,33 @@ function GamerComponent() {
                     </Col>
                     <Col>
                         <img src={thermaltake} alt="Logomarca da Thermaltake" className="img-fluid" />
+                    </Col>
+                </Row>
+                <Row className={['centralizaXY pt-5',effect.gamerComponent.gamerRow03.visibility, effect.gamerComponent.gamerRow03.animation]}>
+                    <Col>
+                        <img src={asus} alt="Logomarca da Asus" className="img-fluid" />
+                    </Col>
+                    <Col>
+                        <img src={gigabyte} alt="Logomarca da Gigabyte" className="img-fluid" />
+                    </Col>
+                    <Col>
+                        <img src={msi} alt="Logomarca da MSI" className="img-fluid" />
+                    </Col>
+                    <Col>
+                        <img src={seagate} alt="Logomarca da Seagate" className="img-fluid" />
+                    </Col>
+                    <Col>
+                        <img src={hp} alt="Logomarca da HP" className="img-fluid" />
+                    </Col>
+                    <Col>
+                        <img src={epson} alt="Logomarca da Epson" className="img-fluid" />
+                    </Col>
+                </Row>
+                <Row className={['centralizaXY pt-5',effect.gamerComponent.gamerRow03.visibility, effect.gamerComponent.gamerRow03.animation]}>
+                    <Col>
+                        <p className="text-muted">
+                            Todas são marcas acima são reservadas e pertencem aos seus respectivos donos.
+                        </p>
                     </Col>
                 </Row>
                 <Row className={['text-center py-5', effect.gamerComponent.gamerRow03.visibility, effect.gamerComponent.gamerRow03.animation]}>

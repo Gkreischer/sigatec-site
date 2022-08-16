@@ -9,8 +9,6 @@ function NavbarComponent() {
 
     const { location, handleClick } = useContext(AnimationsContext)
 
-    //console.log(location);
-
     return (
         <Navbar bg="dark" variant="dark" expand="md" sticky="top">
             <Navbar.Brand href="www.sigatecinformatica.com.br">
@@ -29,11 +27,11 @@ function NavbarComponent() {
                     style={{ maxHeight: '100px' }}
                     navbarScroll
                 >
-                    <Nav.Link href="#home" onClick={handleClick} className={location.location == 'home' ? 'active' : ''}>Home</Nav.Link>
-                    <Nav.Link href="#sobre" onClick={handleClick} className={location.location == 'sobre' ? 'active' : ''}>Sobre</Nav.Link>
-                    <Nav.Link href="#gamer" onClick={handleClick} className={location.location == 'gamer' ? 'active' : ''}>Gamers</Nav.Link>
-                    <Nav.Link href="#servicos" onClick={handleClick} className={location.location == 'servicos' ? 'active' : ''}>Serviços</Nav.Link>
-                    <Nav.Link href="#contato" onClick={handleClick} className={location.location == 'contato' ? 'active' : ''}>Contato</Nav.Link>
+                    <Nav.Link id="homeComponent" onClick={handleClick} href="#home" className={location.location === 'home' ? 'active' : ''}>Home</Nav.Link>
+                    <Nav.Link id="sobreComponent" onClick={handleClick} href="#sobre" className={location.location === 'sobre' ? 'active' : ''}>Sobre</Nav.Link>
+                    <Nav.Link id="gamerComponent" onClick={handleClick} href="#gamer" className={location.location === 'gamer' ? 'active' : ''}>Gamers</Nav.Link>
+                    <Nav.Link id="servicosComponent" onClick={handleClick} href="#servicos" className={location.location === 'servicos' ? 'active' : ''}>Serviços</Nav.Link>
+                    <Nav.Link id="contatoComponent" onClick={handleClick} href="#contato" className={location.location === 'contato' ? 'active' : ''}>Contato</Nav.Link>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
