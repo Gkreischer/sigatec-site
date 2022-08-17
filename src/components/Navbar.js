@@ -1,5 +1,7 @@
 import React, { useContext } from 'react';
 import Nav from 'react-bootstrap/Nav';
+import { Col, Container, Row } from "react-bootstrap";
+
 import Navbar from 'react-bootstrap/Navbar';
 
 import logomarca from './../assets/images/Logo.jpg';
@@ -11,7 +13,7 @@ function NavbarComponent() {
 
     return (
         <Navbar bg="dark" variant="dark" expand="md" sticky="top">
-            <Navbar.Brand href="www.sigatecinformatica.com.br">
+            <Navbar.Brand href="https://www.sigatecinformatica.com.br">
                 <img
                     src={logomarca}
                     width="50"
@@ -20,11 +22,10 @@ function NavbarComponent() {
                     alt="React Bootstrap logo"
                 />
             </Navbar.Brand>
-            <Navbar.Toggle aria-controls="navbarScroll" />
+            <Navbar.Toggle className="me-3" aria-controls="navbarScroll" />
             <Navbar.Collapse id="navbarScroll">
                 <Nav
-                    className="me-auto my-2 my-lg-0"
-                    style={{ maxHeight: '100px' }}
+                    className="me-auto mx-3 my-2 my-lg-0"
                     navbarScroll
                 >
                     <Nav.Link id="homeComponent" onClick={handleClick} href="#home" className={location.location === 'home' ? 'active' : ''}>Home</Nav.Link>
