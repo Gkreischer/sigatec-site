@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.3ee9f64b.css",
-    "main.js": "./static/js/main.c591b641.js",
+    "main.js": "./static/js/main.d70ddf89.js",
     "static/js/787.c91deb5f.chunk.js": "./static/js/787.c91deb5f.chunk.js",
     "static/media/02.jpg": "./static/media/02.7a1b39e6f8668b2a4204.jpg",
     "static/media/03.jpg": "./static/media/03.d5c05f91c5ca3a3bad0a.jpg",
@@ -22,11 +22,11 @@
     "static/media/thermaltake.png": "./static/media/thermaltake.a7f397f70556eeaecc9d.png",
     "index.html": "./index.html",
     "main.3ee9f64b.css.map": "./static/css/main.3ee9f64b.css.map",
-    "main.c591b641.js.map": "./static/js/main.c591b641.js.map",
+    "main.d70ddf89.js.map": "./static/js/main.d70ddf89.js.map",
     "787.c91deb5f.chunk.js.map": "./static/js/787.c91deb5f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3ee9f64b.css",
-    "static/js/main.c591b641.js"
+    "static/js/main.d70ddf89.js"
   ]
 }
