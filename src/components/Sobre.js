@@ -14,7 +14,7 @@ function SobreComponent() {
                     <img src={logo} alt="Logo da Sigatec Informatica" className="img-fluid" />
                 </Col>
             </Row>
-            <Row className='text-center pt-md-5 pt-3'>
+            <Row className='text-center pt-5'>
                 <Col>
                     <h1>
                         <b>Sigatec Informática</b>

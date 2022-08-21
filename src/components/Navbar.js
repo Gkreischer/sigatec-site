@@ -24,8 +24,7 @@ function NavbarComponent() {
             <Navbar.Toggle className="me-3" aria-controls="navbarScroll" />
             <Navbar.Collapse id="navbarScroll">
                 <Nav
-                    className="me-auto my-2 my-lg-0"
-                    navbarScroll
+                    className="ms-3 ms-md-0 me-auto my-2 my-lg-0"
                 >
                     <Nav.Link id="homeComponent" onClick={handleClick} href="#home" className={location.location === 'home' ? 'active' : ''}>Home</Nav.Link>
                     <Nav.Link id="sobreComponent" onClick={handleClick} href="#sobre" className={location.location === 'sobre' ? 'active' : ''}>Sobre</Nav.Link>

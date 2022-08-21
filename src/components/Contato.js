@@ -6,7 +6,11 @@ function ContatoComponent() {
             <Container id="contato">
                 <Row className="pb-5">
                     <Col>
-                        <h1>Contato</h1>
+                        <h1>
+                            <strong>
+                                Contato
+                            </strong>
+                        </h1>
                     </Col>
                 </Row>
                 <Row>

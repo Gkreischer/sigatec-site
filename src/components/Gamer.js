@@ -153,28 +153,28 @@ function GamerComponent() {
                     </Col>
                 </Row>
                 <Row className={['centralizaXY', effect.gamerComponent.gamerRow03.visibility, effect.gamerComponent.gamerRow03.animation]}>
-                    <Col>
+                    <Col xs={2}>
                         <img src={redragon} alt="Logomarca da Redragon" className="img-fluid" />
                     </Col>
-                    <Col>
+                    <Col xs={2}>
                         <img src={oex} alt="Logomarca da OEX" className="img-fluid" />
                     </Col>
-                    <Col>
+                    <Col xs={2}>
                         <img src={corsair} alt="Logomarca da Corsair" className="img-fluid" />
                     </Col>
-                    <Col>
+                    <Col xs={2}>
                         <img src={logitech} alt="Logomarca da Logitech" className="img-fluid" />
                     </Col>
-                    <Col>
+                    <Col xs={2}>
                         <img src={ryzen} alt="Logomarca da Ryzen" className="img-fluid" />
                     </Col>
-                    <Col>
+                    <Col xs={2}>
                         <img src={intel_core} alt="Logomarca da Intel Core" className="img-fluid" />
                     </Col>
-                    <Col>
+                    <Col className="d-none">
                         <img src={nvidia} alt="Logomarca da Nvidia" className="img-fluid" />
                     </Col>
-                    <Col>
+                    <Col className="d-none">
                         <img src={thermaltake} alt="Logomarca da Thermaltake" className="img-fluid" />
                     </Col>
                 </Row>
@@ -210,7 +210,7 @@ function GamerComponent() {
                         <h1 className="yellow">Alguns de nossos produtos</h1>
                     </Col>
                 </Row>
-                <Row className={['centralizaXY pb-5', effect.gamerComponent.gamerRow03.visibility, effect.gamerComponent.gamerRow03.animation]}>
+                <Row className={['centralizaXY', effect.gamerComponent.gamerRow03.visibility, effect.gamerComponent.gamerRow03.animation]}>
                     <Col md={8}>
                         <ProductsCarousel></ProductsCarousel>
                     </Col>
