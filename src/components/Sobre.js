@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { Col, Container, Row } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import logo from './../assets/images/Logo.jpg';
 import { AnimationsContext } from "./Animations";
 
@@ -20,23 +20,27 @@ function SobreComponent() {
                         <b>Sigatec Informática</b>
                     </h1>
                     <ul className="pt-md-5" style={{ listStyleType: "none", paddingLeft: '0' }}>
+
                         <li>
-                            <h4>+ 25 anos de mercado</h4>
+                            <h4>Referência em Rio das Ostras e na região</h4>
                         </li>
                         <li>
                             <h4>Diversos serviços e produtos</h4>
                         </li>
                         <li>
-                            <h4>Referência em Rio das Ostras e na região</h4>
+                            <h4>
+                                Manutenção de computadores
+                            </h4>
                         </li>
                         <li>
                             <h4>
-                                <strong>Manutenção de computadores</strong>
+                                <strong>Desde 1994 atuando com excelência</strong>
                             </h4>
                         </li>
                     </ul>
                 </Col>
             </Row>
+
         </Container>
     );
 }

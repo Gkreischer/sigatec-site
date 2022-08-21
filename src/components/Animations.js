@@ -47,10 +47,10 @@ export const AnimationsProvider = ({ children }) => {
     scrollHeight = document.documentElement.scrollTop;
 
     // VERIFY HOW PIXELS ANIMATIONS NEEDS TO START
-    console.log(scrollHeight);
+    //console.log(scrollHeight);
 
     if (screenWidth < 768) {
-      mobileAnimationsStart = 700;
+      mobileAnimationsStart = 1500;
     }
 
     setLocation({
@@ -68,7 +68,7 @@ export const AnimationsProvider = ({ children }) => {
       }));
     }
 
-    if (document.documentElement.scrollTop > 1050 - mobileAnimationsStart) {
+    if (document.documentElement.scrollTop > 1500 - mobileAnimationsStart) {
 
       setLocation({
         location: 'gamer'
@@ -114,14 +114,14 @@ export const AnimationsProvider = ({ children }) => {
     }
 
 
-    if (document.documentElement.scrollTop > 3900 - mobileAnimationsStart) {
+    if (document.documentElement.scrollTop > 4000 - mobileAnimationsStart) {
 
       setLocation({
         location: 'servicos'
       })
     }
 
-    if (document.documentElement.scrollTop > 4500 - mobileAnimationsStart) {
+    if (document.documentElement.scrollTop > 5800 - mobileAnimationsStart) {
       setLocation({
         location: 'contato'
       })

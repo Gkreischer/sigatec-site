@@ -1,6 +1,5 @@
 import React, { useContext } from 'react';
 import Nav from 'react-bootstrap/Nav';
-import { Col, Container, Row } from "react-bootstrap";
 
 import Navbar from 'react-bootstrap/Navbar';
 
@@ -19,13 +18,13 @@ function NavbarComponent() {
                     width="50"
                     height="50"
                     className="d-inline-block align-top ms-3"
-                    alt="React Bootstrap logo"
+                    alt="Logo Sigatec Informática"
                 />
             </Navbar.Brand>
             <Navbar.Toggle className="me-3" aria-controls="navbarScroll" />
             <Navbar.Collapse id="navbarScroll">
                 <Nav
-                    className="me-auto mx-3 my-2 my-lg-0"
+                    className="me-auto my-2 my-lg-0"
                     navbarScroll
                 >
                     <Nav.Link id="homeComponent" onClick={handleClick} href="#home" className={location.location === 'home' ? 'active' : ''}>Home</Nav.Link>
