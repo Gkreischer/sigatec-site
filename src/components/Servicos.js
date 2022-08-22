@@ -15,13 +15,13 @@ function ServicosComponent() {
                     </h1>
                 </Col>
             </Row>
-            <Row className="py-3 pt-md-3">
+            <Row>
                 <Col>
                     <h2>Montagem</h2>
                 </Col>
             </Row>
             <Row>
-                <Col>
+                <Col className="d-flex align-items-center">
                     <img src={montagem_cpu_low} className="img-fluid" alt="Imagem de montagem de computadores" />
                 </Col>
                 <Col className="d-flex flex-column justify-content-center align-items-center">
@@ -29,7 +29,7 @@ function ServicosComponent() {
                     <h5>Desde <strong>computadores simples</strong> até os de <strong>alto desepenho/gamer.</strong></h5>
                 </Col>
             </Row>
-            <Row className="py-3 pt-md-5 text-end">
+            <Row className="pt-5 pt-md-5 text-end">
                 <Col>
                     <h2>Manutenção</h2>
                 </Col>
@@ -41,17 +41,17 @@ function ServicosComponent() {
                         Utilizando programs de testes, verificamos e testamos completamente seu equipamento.
                     </h5>
                 </Col>
-                <Col>
+                <Col className="d-flex align-items-center">
                     <img src={montagem_pc_low} className="img-fluid" alt="Imagem de manutenção de computadores" />
                 </Col>
             </Row>
-            <Row className="py-3 pt-md-5">
+            <Row className="pt-5 pt-md-5">
                 <Col>
                     <h2>Venda</h2>
                 </Col>
             </Row>
             <Row>
-                <Col>
+                <Col className="d-flex align-items-center">
                     <img src={venda} className="img-fluid" alt="Imagem de vendas" />
                 </Col>
                 <Col className="d-flex flex-column justify-content-center align-items-center">
