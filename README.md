@@ -1,3 +1,9 @@
+# ACESSO:
+
+https://gkreischer.github.io/sigatec-site/
+
+Já foi aprovado. Aguardando cliente adquirir hospedagem.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
